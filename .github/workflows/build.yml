@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies for ARM and AARCH64
       if: endsWith(matrix.docker-container, 'cross') 
       run: |
-        sudo apt-get -y binfmt-support qemu-user-static
+        sudo apt-get -y install binfmt-support qemu-user-static
 
     - name: Build 
       run: |
