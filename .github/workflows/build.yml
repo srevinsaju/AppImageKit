@@ -19,9 +19,9 @@ jobs:
           - ARCH: 'i386'
             docker-container: 'appimagebuild-i386'
           - ARCH: 'armhf'
-            docker-container: 'armhf-cross'
+            docker-container: 'appimagebuild-armhf-cross'
           - ARCH: 'aarch64'
-            docker-container: 'aarch64-cross'
+            docker-container: 'appimagebuild-aarch64-cross'
       fail-fast: false
     env:
       DOCKER_IMAGE: quay.io/appimage/${{ matrix.docker-container }}
