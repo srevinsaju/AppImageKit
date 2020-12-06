@@ -24,7 +24,7 @@ jobs:
             docker-container: 'aarch64-cross'
       fail-fast: false
     env:
-      DOCKER_IMAGE: ${{ matrix.docker-container }}
+      DOCKER_IMAGE: quay.io/appimage/${{ matrix.docker-container }}
       ARCH: ${{ matrix.ARCH }}
 
     steps:
